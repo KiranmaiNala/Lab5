@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.CSS" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <legend>Share your Travels</legend>
+      <h5>lets us know where you'vr been</h5>
+    </header>
+    <div class="formbody">
+      <div>
+        <h4 class="lightblue" id="PHOTODETAILS">PHOTO DETAILS</h4>
+        <form
+          name="Form"
+          method="post"
+          action="http://www.randyconnolly.com/tests/process.php"
+          onsubmit="return validateForm()"
+        >
+          <label for="Title">Title</label><br />
+          <input type="text" id="title" name="title" size="200px" /><br />
+          <label for="Description">Description</label><br />
+          <input type="text" id="Des" name="Description" size="200px"  />
+          <div class="grid-container">
+            <div class="continent">
+              <label for="continent">continents</label><br />
+              <select id="continent" name="continent">
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value=" NorthAmerica">North America</option>
+                <option value="SouthAmerica">South America</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Europe">Europe</option>
+                <option value="Australia">Australia</option>
+              </select><br/>
+              <label for="Country">Country</label><br />
+              <input type="text" id="Country" name="Country" /><br />
+              <label for="City">City</label><br />
+              <input type="text" id="City" name="City" /><br />
+            </div>
+            <div class="" display="inline">
+              <p>Copyright2</p>
+              <input
+                type="radio"
+                id="AllRight"
+                name="fav_language"
+                value="All Rights Reserved"
+              />
+              <label for="AllRight">All Rights Reserved</label><br />
+              <input
+                type="radio"
+                id="Creative commons"
+                name="fav_language"
+                value="Creative commons"
+              />
+              <label for="Creative commons">Creative commons</label><br />
+              <p>Attribution commons Type</p>
+              <input
+                type="checkbox"
+                id="Attribution"
+                name="Attribution"
+                value="Attribution"
+              />
+              <label for="Attribution">Attribution </label><br />
+              <input
+                type="checkbox"
+                id="NoCommercial"
+                name="NoCommercial"
+                value="No Commercial"
+              />
+              <label for="No Commercial"> No Commercial</label><br />
+              <input
+                type="checkbox"
+                id="NoDerivative"
+                name="NoDerivative"
+                value="No Derivative"
+              />
+              <label for="No Derivative">No Derivative Works</label>
+            </div>
+            <div class="lightblue" id="SoftwareLiceanse">
+              <p>
+                I accept software license<input
+                  type="checkbox"
+                  id="Software"
+                  name="Software"
+                  value="I accept software license"
+                />
+              </p>
+            </div>
+          </div>
+          <div class="RateColor">
+            <div class="Rate">
+              <label for="Rate this photo">Rate this photo</label><br />
+              <input type="number" id="Ratethisphoto" name="Ratethisphoto" /><br />
+              <label for="DateTaken">Date Taken</label><br />
+              <input
+                type="date"
+                id="DateTaken"
+                name="DateTaken"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </div>
+          </br>
+          <div class="ColorCollection">
+            <label for="ColorCollection">Color Collection</label><br />
+            <input type="color" id="ColorCollection" name="ColorCollection" />
+          </br>
+          <label for="TimeTaken">Time Taken</label><br />
+          <input type="time" id="Time Taken" name="TimeTaken" />
+        </div>
+        </div>
+          <div class="lightblue">
+            <input type="submit" value="Sumbit" class="submit" />
+            <input type="reset" value="Clear Form" class="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
